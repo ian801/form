@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="class" method="container">
+        <h2 class="heading">sign up</h2>
+        <div class="steps-container">
+            <hr>
+            <hr class="active">
+            <div class="steps"><i class="fa-solid fa-user"></i></div>
+            <div class="steps"><i class="fa-solid fa-envelope"></i></div>
+            <div class="steps"><i class="fa-solid fa-key"></i></div>
+            <div class="steps"><i class="fa-solid fa-trophy"></i></div>
+        </div>
+
+        <div class="input-slide-container">
+            <scroller>
+                <div class="input-slide">
+                    <h3>User Name </h3>
+                    <p><i>username is your online identity</i></p>
+                    <ul class="rule">
+
+                        <li>your username should only contain letters, numbers,underscore or hypens.</li><li>no spaces  or special characters allowed.</li>
+                        <li>your username should not be offensive or contain profaity.</li>
+                     </ul>
+                     <input type="text" placeholder="Type your username Here" name="username" class="username">
+                     <div class="full-name"><input type="text" placeholder="First name" name="firstname">
+                        <input type="text" name="lastname" class="lastname" placeholder="lastname"></div>
+                        <button class="button-nex" onclick="Nextslide(1)">Next</button>
+                </div>  
+                <div class="input-slide user-detail">
+                    <h3>Email</h3>
+                    <p><i>Email is the gateway to digital life</i></p>
+                    <ul class="rules">
+                        <li>Please enter valid email in the format "example@example.com".</li>
+                        <li>we value your privacy and will never use your email for any unauthorized purposes.</li>
+                        <li>Please dont  use email that belong to someone else.</li>
+                        <li>Please dont use email that include Personal Information</li>
+                    </ul>
+                    <input type="email" name="email" class="email" placeholder="Email">
+
+                    <button class="button-nex"  onclick="Nextslide(2)">Next</button>
+                </div>
+                <div class="input-slide Password-slide">
+                    <h3>Password</h3>
+                    <p><i>Secure your account with a strong password</i></p>
+                    <ul class="rule">
+                        <li>Includea mix of uppercase and lowercase letter, numbers,and special characters.</li>
+                        <li>Avoid using common or easily guessable passwords.</li>
+                        <li>do not use personal Information.</li>
+                    </ul>
+                    <input type="password" name="password" class="password" placeholder="Password">
+                    <input type="password" name="confirm-password" class="confirm-password" placeholder="Confirm-password">
+                    <button class="button-nex"onclick="Nextslide(3)"> Next</button>
+                </div>
+                <div class="input-slide finish-slide">
+                    <h3>Congratulations!</h3>
+                    <p><i>you have completed all steps required for registration.</i></p>
+                    <ul class="rules">
+                        <li>Before submitting your information, please take a moment to ensure that all the details provided are correct.</li>
+                        <li>we take the privacy and security of our users very seriously, and it is important that all the information provided is acurate and up- to-date.</li>
+                        <li>once you have confirmed that everything is in order , simply click the 'submit'  button.</li>
+                    </ul>
+                    <button type="submit" class="button-nex" disable> submit</button>
+                </div>
+            </scroller>
+            </div>
+            <button class="GoBack" onclick="GoBack()"><i class="fa-solid fa-arrow-left"></i></button>
+    </form>
+    
+</body>
+</html>
